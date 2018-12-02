@@ -7,3 +7,11 @@ cmake_install.cmake
 install_manifest.txt
 compile_commands.json
 CTestTestfile.cmake
+DartConfiguration.tcl
+StrAlg.xcodeproj
+CPatterns.build/
+CPatterns.xcodeproj/
+iterators/CPatterns.build/
+iterators/Debug/
+iterators/loop.txt
+iterators/loop_iter.txt
