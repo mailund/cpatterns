@@ -13,6 +13,4 @@ CPatterns.build/
 CPatterns.xcodeproj/
 iterators/CPatterns.build/
 iterators/Debug/
-iterators/loop.txt
-iterators/loop_cb.txt
-iterators/loop_iter.txt
+iterators/*.txt
