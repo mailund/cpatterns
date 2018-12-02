@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/mailund/cpatterns.svg?branch=master)](https://travis-ci.org/mailund/cpatterns)
 [![Coverage Status](https://coveralls.io/repos/github/mailund/cpatterns/badge.svg?branch=master)](https://coveralls.io/github/mailund/cpatterns?branch=master)
 
 

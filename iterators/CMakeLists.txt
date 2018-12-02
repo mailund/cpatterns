@@ -4,18 +4,31 @@ add_executable(
 )
 add_test(
     NAME Iterators_Run_Loop
-    COMMAND sh -c "$<TARGET_FILE:iterators> loop > loop.txt"
+    COMMAND iterators loop loop.txt
+    WORKING_DIRECTORY "${PROJECT_SOURCE_DIR}/iterators"
+)
+add_test(
+    NAME Iterators_Run_Loop_Callback
+    COMMAND iterators loop_cb loop_cb.txt
     WORKING_DIRECTORY "${PROJECT_SOURCE_DIR}/iterators"
 )
 add_test(
     NAME Iterators_Run_Loop_Iterator
-    COMMAND sh -c "$<TARGET_FILE:iterators> loop_iter > loop_iter.txt"
+    COMMAND iterators loop loop_iter.txt
+    WORKING_DIRECTORY "${PROJECT_SOURCE_DIR}/iterators"
+)
+
+add_test(
+    NAME Iterators-Compare-Loop-Callback
+    COMMAND
+    cmp loop.txt loop_cb.txt
     WORKING_DIRECTORY "${PROJECT_SOURCE_DIR}/iterators"
 )
 add_test(
-    NAME Iterators-Compare_Loop
+    NAME Iterators-Compare-Loop-Iterator
     COMMAND
     cmp loop.txt loop_iter.txt
     WORKING_DIRECTORY "${PROJECT_SOURCE_DIR}/iterators"
 )
+
 
