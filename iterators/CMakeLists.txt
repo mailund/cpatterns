@@ -1,6 +1,6 @@
 add_executable(
     iterators
-    iterators
+    iterators.c
 )
 add_test(
     NAME Iterators-Run-Loop
@@ -82,4 +82,9 @@ add_test(
     COMMAND
     cmp nested_loop.txt nested_loop_iter.txt
     WORKING_DIRECTORY "${PROJECT_SOURCE_DIR}/iterators"
+)
+
+add_executable(
+    iter_recursion
+    iter_recursion.c
 )
